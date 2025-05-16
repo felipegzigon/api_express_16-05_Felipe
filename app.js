@@ -8,6 +8,9 @@ const lista = [
     { id: 2, name: 'Jane Doe'}
 ];
 
+const cors = require('cors');
+app.use(cors());
+
 app.use(express.json());
 app.get('/', (req, res) => {
     res.send(lista)
